@@ -1,7 +1,2 @@
-/proxy/* https://platform-api.opentargets.io/proxy/:splat 200!
-/* /index.html 200
-# Redirect domain aliases to primary domain
-https://platform.opentargets.org/* https://www.targetvalidation.org/:splat 301!
-
-# These extra rules are required because HTTPS is not forced
-http://platform.opentargets.org/* https://www.targetvalidation.org/:splat 301!
+/summary  drug=:id  https://platform.opentargets.org/drug/:id/     301!
+/*                  https://platform.opentargets.org/:splat        301!
